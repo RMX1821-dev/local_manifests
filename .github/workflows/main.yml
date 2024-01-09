@@ -1,0 +1,24 @@
+name: Test My local manifests
+
+on:
+  push:
+    branches: [main, test]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install repo tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-core python3-pip wget
+          wget https://storage.googleapis.com/git-repo-downloads/repo && sudo mv repo /usr/bin/repo && sudo chmod a+x /usr/bin/repo
+      - name: Initialize and Sync Repo
+        run: |
+          repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+          rm -rf .repo/local_manifests
+          git clone https://github.com/RMX1821-dev/local_manifests.git .repo/local_manifests
+          timeout 1m repo sync || true
+        timeout-minutes: 6
