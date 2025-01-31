@@ -2,17 +2,17 @@
 <manifest>
 
 <remote  name="ghub"
-fetch="https://github.com"
+fetch="https://github.com" />
 
 <remote  name="glab"
 fetch="https://gitlab.com" />
- 
-    <!-- Trees --> 
+
+<!-- Trees --> 
 <project path="device/realme/RMX1821" name="RMX1821-dev/android_device_realme_RMX1821" remote="ghub" revision="main" />
 <project path="vendor/realme/RMX1821" name="RMX1821-dev/android_vendor_realme_RMX1821" remote="ghub" revision="main" />
 <project path="kernel/realme/RMX1821" name="RMX1821-dev/arrancar_RMX1821" remote="ghub" revision="main" />
 <project path="vendor/realme/RMX1821-ims" name="RMX1821-dev/android_vendor_realme_RMX1821-ims" remote="ghub" revision="main" />
 <project path="vendor/extra" name="RMX1821-dev/android_vendor_extra" remote="ghub" revision="main" />
 <project path="prebuilts/clang/host/linux-x86/clang-r437112" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r437112" remote="lab" revision="12.0" />
-    
+
 </manifest>
