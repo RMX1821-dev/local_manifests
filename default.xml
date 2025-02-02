@@ -18,6 +18,9 @@ fetch="https://gitlab.com" />
 
 <!-- Additions/Removals -->
 <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+<remove-project path="system/core" name="LineageOS/android_system_core" />
+
 <project path="frameworks/base" name="RMX1821-dev/android_frameworks_base" remote="ghub" revision="lineage-20.0" />
+<project path="system/core" name="RMX1821-dev/android_system_core" remote="ghub" revision="lineage-20.0" />
 
 </manifest>
