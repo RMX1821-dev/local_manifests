@@ -10,16 +10,11 @@ fetch="https://gitlab.com" />
 <!-- Trees --> 
 <project path="device/realme/RMX1821" name="RMX1821-dev/android_device_realme_RMX1821" remote="ghub" revision="main" />
 <project path="vendor/realme/RMX1821" name="RMX1821-dev/android_vendor_realme_RMX1821" remote="ghub" revision="main" />
-<project path="kernel/realme/RMX1821" name="RMX1821-dev/Duralumin_RMX1821" remote="ghub" revision="T" />
+<project path="kernel/realme/RMX1821" name="RMX1821-dev/android_kernel_realme_RMX1821" remote="ghub" revision="thirteen" />
 <project path="vendor/realme/RMX1821-ims" name="RMX1821-dev/android_vendor_realme_RMX1821-ims" remote="ghub" revision="main" />
 <project path="vendor/extra" name="RMX1821-dev/android_vendor_extra" remote="ghub" revision="main" />
 <project path="prebuilts/clang/host/linux-x86/clang-r437112" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r437112" remote="glab" revision="12.0" />
 <project path="device/mediatek/sepolicy_vndr" name="RMX1821-dev/android_device_mediatek_sepolicy_vndr" remote="ghub" revision="main" />
-
-<!-- Additions/Removals -->
-<remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
-<remove-project path="system/core" name="LineageOS/android_system_core" />
-
 <project path="frameworks/base" name="RMX1821-dev/android_frameworks_base" remote="ghub" revision="lineage-20.0" />
 <project path="system/core" name="RMX1821-dev/android_system_core" remote="ghub" revision="lineage-20.0" />
 
